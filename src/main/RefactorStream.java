@@ -61,7 +61,7 @@ public class RefactorStream {
         oracleAndTrainingInvoicesStream.stream()
                 .map(invoice -> invoice.getId())
                 .forEach(idsStream::add);
-        System.out.println(ids.toString());
+        System.out.println(idsStream.toString());
 
         ids.stream()
                 .limit(5)
